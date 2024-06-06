@@ -152,6 +152,8 @@ header ul li a:hover {
   max-width: 50%;
   color: white;
   margin: 20% 0 0 10%;
+  justify-content: center;
+  align-items: center;
 }
 
 .home h1 {
@@ -162,9 +164,8 @@ header ul li a:hover {
 .home p {
   font-weight: 400;
   line-height: 25px;
-  font-family: sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 17px;
-  margin: 50px 0 0 50px;
 }
 
 button {
