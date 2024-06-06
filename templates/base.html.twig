@@ -4,50 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Welcome!{% endblock %}</title>
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>M</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>M</text></svg>">
 
     {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Feuilles de styles CSS-->
     <link rel="stylesheet" href="{{asset('assets/css/styles.css')}}">
     {% block stylesheets %} {% endblock %}
+    <!--Fichier JS-->
+    <script src=" {{asset('assets/js/sripts.js')}}"></script>
     {% block javascripts %} {% endblock %}
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header class="header" id="navigation-menu">
-        <div class="container">
-            <nav>
-                <a href="#" class="logo"><img src="assets/images/logo.png" alt=""></a>
-                <ul class="nav-menu">
-                    <li><a href="#Accueil" class="nav-link">Accueil</a> </li>
-                    <li><a href="#Hotels" class="nav-link">Hôtels</a> </li>
-                    <li><a href="#Contact" class="nav-link">Contact</a> </li>
-                    <li><a href="#A propos" class="nav-link">A propos</a> </li>
-                    <li><a href="# Se connecter" class="btn">Se connecter</a> </li>
-                    <li><a href="#Register" class="btn">Register</a> </li>
-                </ul>
-                <div class="hambuger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+    <section class="head">
+        <div class="container flex1">
+            <div class="scoial">
+            </div>
+            <div class="logo">
+                <img src="assets/images/logo Hotel.png" alt="">
+            </div>
+            <div class="address">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>101 Antananarivo, basé à MADAGASCAR</span>
+            </div>
+        </div>
+    </section>
 
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar flex1">
+                <div class="sticky_logo logo">
+                    <img src="assets/images/logo Hotel.png" alt="">
                 </div>
 
+                <ul class="nav-menu">
+                    <li> <a href="#home" class="nav-link">Accueil</a> </li>
+                    <li> <a href="#about" class="nav-link">A propos</a> </li>
+                    <li> <a href="#rooms" class="nav-link">Nos Chambres</a> </li>
+                    <li> <a href="#services" class="nav-link">Hôtels</a> </li>
+                    <li> <a href="#contact" class="nav-link">contact</a> </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <div class="head_contact">
+                    <ul class="nav-menu">
+                        <li><a href="#Se_connecter" class="btn">Se connecter</a> </li>
+                        <li><a href="#Inscription" class="btn">Inscription</a> </li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobliemmenu);
+
+        function mobliemmenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
 
     <section class="home" id="home">
         <div class="head_container">
@@ -63,12 +95,7 @@
             <div class="image">
                 <img src="assets/images/17.jpg" class="slide">
             </div>
-            <div class="image_item">
-                <img src="assets/images/17.jpg" alt="" class="slide active" onclick="img('images/17.jpg')">
-                <img src="assets/images/31.jpg" alt="" class="slide" onclick="img('images/31.jpg')">
-                <img src="assets/images/6.jpg" alt="" class="slide" onclick="img('images/6.jpg')">
-                <img src="assets/images/7.jpg" alt="" class="slide" onclick="img('images/7.jpg')">
-            </div>
+
         </div>
     </section>
 
@@ -94,13 +121,274 @@
                 </div>
             </div>
             <div class="search">
-                <input type="submit" value="ENVOYER">
+                <input type="submit" value="CHERCHER">
             </div>
         </div>
     </section>
+    <section class="about top" id="about">
+        <div class="container">
+            <div class="heads">
+                <h5>EXPLOREZ</h5>
+                <h2>NOUS SOMMES COOL POUR VOUS DONNER LE PLAISIR!
+                </h2>
+            </div>
+            <div class="container flex">
+                <div class="left">
+                    <div class="img">
+                        <img src="assets/images/2.jpg" alt="" class="image1">
+                        <img src="assets/images/32.jpg" alt="" class="image2">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="heading">
+                        <h5>MADAGASCAR PROPOSE DIFFERENTES HOTELS & CHAMBRES POUR VOUS</h5>
+                        <h2>Bienvenue chez-nous!</h2>
+                        <p>Nous sommes certifiés </p>
+                        <p>Des destinations uniques, des lieux qui reflètent et subliment vos projets.&nbsp;Comprendre votre message et se concentrer sur vos objectifs. Insuffler notre savoir-faire à votre événement et vous faire rêver. Bienvenue dans l’hôtel Management de Madagascar.</p>
+                        <p>Une équipe réactive est disponible.Des nombreuses hôtels collaborent avec nous. Offrez-vous un moment hors du temps à Madagascar. Pour que votre séjour en famille soit propice au partage, à la détente et à l'épanouissement, nos hôtels vous proposent une diversité de chambres communicantes et de suites adaptées à vos besoins. Attentions particulières et équipes aux petits soins. Tranquillité et repos bien mérité.</p>
+                        <p>Conjuguer tous les bonheurs et sublimer vos vacances en famille. Profiter de nos Suites spacieuses et intimistes. Partager des moments privilégiés tout en préservant la tranquillité de chacun. Coin lecture ou jeux de société dans le salon adjacent. Rires partagés pour les uns. Repos bien mérité dans le confort de la chambre. Quiétude garantie pour les autres. Tous les plaisirs sont réunis.</p>
+                        <button class="btn1">EN SAVOIR PLUS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wrapper top">
+        <div class="container">
+            <div class="text">
+                <h2>NOS COMMODITES & SERVICES</h2>
+                <p>Savourer l’excellence du confort. Avec nos espaces communicants, petits et grands prennent du bon temps. Des souvenirs, du confort et de la bonne humeur. </p>
 
-    <!--Scripts JS-->
-    <script src=" {{asset('assets/js/sripts.js')}}"></script>
+                <div class="content">
+                    <div class="box flex">
+                        <i class="fas fa-swimming-pool"></i>
+                        <span>Hôtel 3 étoiles</span>
+                    </div>
+                    <div class="box flex">
+                        <i class="fas fa-dumbbell"></i>
+                        <span>Réstaurant</span>
+                    </div>
+                    <div class="box flex">
+                        <i class="fas fa-spa"></i>
+                        <span>Spa & massage</span>
+                    </div>
+                    <div class="box flex">
+                        <i class="fas fa-ship"></i>
+                        <span>Piscine</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="room top" id="room">
+        <div class="container">
+            <div class="heading_top flex1">
+                <div class="heading">
+                    <h5>AUGMENTEZ LE CONFORT AU PLUS HAUT NIVEAU</h5>
+                    <h2>Nos Chambres $ Suites</h2>
+                </div>
+                <div class="button">
+                    <button class="btn1">VOIR TOUS</button>
+                </div>
+            </div>
+
+            <div class="content grid">
+                <div class="box">
+                    <div class="img">
+                        <img src="assets/images/41.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Chambres superieures</h3>
+
+                        <small>Profitez de la quiétude de votre Chambre.
+                            Elles bénéficient toutes de fenêtres pleine hauteur baignant de soleil les pièces du lever au coucher dans une atmosphère chaleureuse et lumineuse. </small> &nbsp;
+
+                        <p> <span> MGA </span> 60.000,00 <span>/par jours</span> </p>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Reserver</button>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="assets/images/40.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h3> Chambres doubles </h3>
+                        <small>Votre Chambre doubles, révèle par ses fenêtres toute hauteur une vue imprenable sur les beaux immeubles.
+                            Elles disposent d'un lit king size, d’une salle de bain en marbre avec douche, d’un salon et d’un agréable coin lecture. </small>
+                        <p> <span> MGA </span> 55.000,00 <span> /par jours</span> </p>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Reserver</button>
+
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="assets/images/45.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Chambres confort</h3>
+                        <small>Vous êtes au cœur de la ville, les immenses fenêtres de la chambre offrant une vue panoramique sur les rues pavées et les bâtiments historiques de </small>
+                        <p> <span> MGA </span> 70.000,00 <span> /par jours </span> </p>
+                    </div>
+                    <button type="submit" class="btn btn-primary"> Reserver </button>
+
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="assets/images/43.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Chambres confort</h3>
+                        <small>Vous êtes au cœur de la ville, les immenses fenêtres de la chambre offrant une vue panoramique sur les rues pavées et les bâtiments historiques de </small>
+                        <p> <span> MGA </span> 43.000,00 <span> /par jours </span> </p>
+                    </div>
+                    <button type="submit" class="btn btn-primary"> Reserver </button>
+
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="assets/images/44.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Chambres confort</h3>
+                        <small>Vous êtes au cœur de la ville, les immenses fenêtres de la chambre offrant une vue panoramique sur les rues pavées et les bâtiments historiques de </small>
+                        <p> <span> MGA </span> 45.000,00 <span> /par jours </span> </p>
+                    </div>
+                    <button type="submit" class="btn btn-primary"> Reserver </button>
+
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="assets/images/46.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Chambres confort</h3>
+                        <small>Vous êtes au cœur de la ville, les immenses fenêtres de la chambre offrant une vue panoramique sur les rues pavées et les bâtiments historiques de </small>
+                        <p> <span> MGA </span> 40.000,00 <span> /par jours </span> </p>
+                    </div>
+                    <button type="submit" class="btn btn-primary"> Reserver </button>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="wrapper wrapper2 top">
+        <div class="container">
+            <div class="text">
+                <div class="heading">
+                    <h5>AU COEUR DE LA COMMUNICATION</h5>
+                    <h2>Notre histoire</h2>
+                </div>
+
+                <div class="para">
+                    <p>Le site est en collaboration avec tous les hôtels à Madagascar, distribuées en 6 provinces. Le but c'est d'attirer l'intentions des gens
+                        pour visiter et benificier une offre de chambre avec plaisir chez-nous. Alors, nous sommes ouverte pour toute collaboration. </p>
+
+                    <div class="box flex">
+                        <div class="img">
+                            <img src="assets/images/39.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <h5>HOTEL MANAGEMENT</h5>
+                            <h5>MADAGASCAR</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="room top" id="room">
+        <div class="container">
+            <div class="heading_top flex1">
+                <div class="heading">
+                    <h5>BIENVENUE SUR NOTRE GALLERIE DES PHOTOS</h5>
+                    <h2>Gallérie de photos de notre hôtel</h2>
+                </div>
+                <div class="button">
+                    <button class="btn1">VOIR TOUS LES HOTELS</button>
+                </div>
+            </div>
+
+            <div class="content grid">
+                <div class="box">
+                    <div class="img">
+                        <img src="assets/images/17.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Radisson Blue Hôtel</h3>
+                        <p> <span> Lot 25 AI/G Ambohijatovo, Antananarivo</span> </p><br />
+                        <small>Bienvenue au Radisson Blue Hôtel,Entièrement rénové, l’Hôtel Radisson Blue cultive un luxe discret entre le parc Antaninarenina et le parc d'Ambohijatovo. Un endroit Calme et confort de plusieurs chambres de luxe et moderne. Vivez au rythme de vos envies.</small> &nbsp;
+
+
+                    </div>
+                    <button type="submit" class="btn btn-primary">Reserver</button>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="assets/images/17.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3> Hôtel Tripolitsa </h3>
+                        <p> <span> Lot 20 IA Analakely, Antananarivo</span> </p><br />
+                        <small>Bienvenue au Triploitsa Hôtel,Entièrement rénové, l’Hôtel Radisson Blue cultive un luxe discret entre le jardin d'Analakely et le pavillon, en face de l'hôtel le glacier. Un endroit Calme et confort de plusieurs chambres de luxe et moderne. Vivez au rythme de vos envies.</small> &nbsp;
+
+                    </div>
+                    <button type="submit" class="btn btn-primary">Reserver</button>
+
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="assets/images/17.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Hôtel 5 étoiles </h3>
+                        <p> <span> Ivato, Antananarivo</span> </p><br />
+                        <small>Bienvenue à l'Hôtel 5 étoiles,Entièrement rénové, l’Hôtel 5 étoiles cultive un luxe discret entre ENSP Ivato, en face de la station Shell. Un endroit Calme et confort de plusieurs chambres de luxe et moderne. Vivez au rythme de vos envies.</small> &nbsp;
+                    </div>
+                    <button type="submit" class="btn btn-primary"> Reserver </button>
+
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="assets/images/17.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Chambres confort</h3>
+                        <small>Vous êtes au cœur de la ville, les immenses fenêtres de la chambre offrant une vue panoramique sur les rues pavées et les bâtiments historiques de </small>
+                        <p> <span> MGA </span> 43.000,00 <span> /par jours </span> </p>
+                    </div>
+                    <button type="submit" class="btn btn-primary"> Reserver </button>
+
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="assets/images/17.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Chambres confort</h3>
+                        <small>Vous êtes au cœur de la ville, les immenses fenêtres de la chambre offrant une vue panoramique sur les rues pavées et les bâtiments historiques de </small>
+                        <p> <span> MGA </span> 45.000,00 <span> /par jours </span> </p>
+                    </div>
+                    <button type="submit" class="btn btn-primary"> Reserver </button>
+
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="assets/images/17.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Chambres confort</h3>
+                        <small>Vous êtes au cœur de la ville, les immenses fenêtres de la chambre offrant une vue panoramique sur les rues pavées et les bâtiments historiques de </small>
+                        <p> <span> MGA </span> 40.000,00 <span> /par jours </span> </p>
+                    </div>
+                    <button type="submit" class="btn btn-primary"> Reserver </button>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
     {% block body %} {% endblock %}
 </body>
 
