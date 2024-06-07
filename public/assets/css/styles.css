@@ -53,7 +53,8 @@ a {
 }
 
 .head img {
-  margin-top: 10px;
+  margin-top: -60px;
+
 }
 
 /*-------------head--------- */
@@ -134,9 +135,9 @@ header .sticky_logo {
 
 header.sticky .sticky_logo {
   display: block;
-  width: 50px;
-  height: 50px;
-  margin-top: -10px;
+  width: 150px;
+  height: 80px;
+  margin-top: -15px;
 }
 
 header.sticky {
@@ -249,9 +250,8 @@ header.sticky ul li a {
 .home .text {
   max-width: 50%;
   color: white;
-  margin: 20% 0 0 10%;
-  justify-content: center;
-  align-items: center;
+  margin: 14%;
+  text-align: center;
 }
 
 .home h1 {
@@ -261,7 +261,7 @@ header.sticky ul li a {
 
 .home p {
   font-weight: 400;
-  line-height: 25px;
+  line-height: 30px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 17px;
 }
@@ -276,9 +276,6 @@ button {
   margin-top: 20px;
 }
 
-.home button {
-  margin-left: 50px;
-}
 
 .home .image_item {
   position: absolute;
@@ -300,19 +297,6 @@ button {
   border: 2px solid white;
 }
 
-.home .box .text {
-  position: relative;
-}
-
-.home .box .text::after {
-  position: absolute;
-  content: 'H';
-  font-size: 500px;
-  top: -120%;
-  font-weight: bold;
-  opacity: 0.1;
-}
-
 /*--------------book--------*/
 .flex {
   display: flex;
@@ -325,7 +309,7 @@ button {
 }
 
 .book {
-  margin-top: 7%;
+  margin-top: -3%;
   width: 100%;
   height: 10vh;
   color: white;
@@ -578,4 +562,292 @@ input {
 
 .wrapper2 .para {
   margin-left: 10%;
+}
+
+/*--------------footer--------*/
+
+#footerContainer {
+  position: relative;
+}
+
+#footerContainer .footer {
+  padding: 30px 0 60px;
+  margin-top: 5%;
+}
+
+.background-brown {
+  background-color: #231f20 !important;
+}
+
+#footerContainer .footer .blockContainer {
+  margin: 0 auto;
+  max-width: 1380px;
+  padding: 0 50px;
+}
+
+.size1of3 {
+  width: 33.33333%;
+}
+
+.unit {
+  float: left;
+}
+
+#footerContainer .footer .block-item {
+  display: block;
+  text-align: center;
+  padding: 35px 20px 0;
+  width: 300px;
+  margin: 0 auto;
+  border-bottom: 5px solid transparent;
+  transition: background-color .25s ease 0s, border-color .25s ease 0s;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+#footerContainer .footer .title-item-bis {
+  margin: 20px 0;
+  min-height: 20px;
+}
+
+#footerContainer .footer .text-description {
+  min-height: 75px;
+}
+
+#footerContainer .footer .block-share {
+  text-align: center;
+  padding: 32px 0 40px;
+}
+
+#footerContainer .footer .block-share .icon {
+  color: #656363;
+  font-size: 30px;
+  margin: 0 25px;
+  transition: color .3s ease;
+}
+
+[class*=" icon-"],
+[class^="icon-"] {
+  vertical-align: middle;
+}
+
+[class*=" icon-"],
+[class^="icon-"] {
+  font-size: 20px;
+  font-family: icons;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#footerContainer .footer .bookByPhone {
+  text-align: center;
+}
+
+.line::after,
+.line::before {
+  content: "";
+  display: table;
+}
+
+.icon-facebook::before {
+  content: "\e609";
+}
+
+.icon-linkedin::before {
+  content: "\e60a";
+}
+
+.icon-youtube::before {
+  content: "\e60c";
+}
+
+.icon-instagram::before {
+  content: "\e908";
+}
+
+.line::after {
+  clear: both;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.btn-main {
+  background: #a57b1b;
+  color: #fff;
+  line-height: normal;
+}
+
+.btn {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: lucien-regular, arial, helvetica, sans-serif;
+  font-size: .875em;
+  padding: 22px 30px 18px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .3s ease 0s;
+}
+
+.mb-48 {
+  margin-bottom: 4.8rem !important;
+}
+
+.mt-10 {
+  margin-top: 1rem !important;
+}
+
+.w-auto {
+  width: auto !important;
+}
+
+#footerContainer .footer .bookByPhone .phoneIcon::before {
+  content: "\e65c";
+}
+
+#footerContainer .footer .bookByPhone .phoneIcon {
+  font-family: icons-header;
+  font-size: 1.6rem;
+  font-weight: 700;
+  vertical-align: middle;
+  margin-right: .5rem;
+}
+
+#footerContainer .footer .bookByPhone .phoneIcon::before {
+  content: "\e65c";
+}
+
+#footerContainer .footer .list-item {
+  text-align: center;
+}
+
+#footerContainer .footer .bookByPhone .phoneIcon {
+  font-family: icons-header;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+#footerContainer .footer .list-item li a {
+  font-size: .75em;
+  color: #b1b1b1;
+}
+
+.ttu {
+  text-transform: uppercase;
+}
+
+ul {
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+
+}
+
+#footerContainer .footer .list-item-hotel {
+  padding-top: 30px;
+}
+
+#footerContainer .footer .list-item {
+  text-align: center;
+}
+
+#footerContainer .footer .text-description {
+  min-height: 75px;
+  font-family: georgia, arial, helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.color-grey {
+  color: #dfdfdf;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  outline: none;
+  background: #263760;
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+}
+
+section {
+
+  padding: 30px;
+}
+
+.subscribe {
+  text-align: center;
+  max-width: 50%;
+  margin: auto;
+}
+
+.subscribe input {
+  width: 70%;
+  border-radius: 50px;
+  margin-right: 10px;
+  margin-left: 15%;
+  padding: 10px;
+  text-align: center;
+}
+
+section {
+  padding: 30px;
+}
+
+.top {
+  margin-top: 80px;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+  margin-top: auto;
+}
+
+p {
+  line-height: 30px;
+
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.flex1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 20px 40px;
+  outline: none;
+  border: 2px solid grey;
+  border-radius: 50px;
+  color: black;
+  margin-top: 20px;
 }
