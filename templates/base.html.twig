@@ -55,14 +55,13 @@
 
                 <div class="head_contact">
                     <ul class="nav-menu">
-                        <li><a href="#Seconnecter" class="btn">Se connecter</a> </li>
-                        <li><a href="#Inscription" class="btn">Inscription</a> </li>
+                        <li><a href="{{path('app_login')}}" class="btn">Se connecter</a> </li>
+                        <li><a href="{{path('app_register')}}" class="btn">Inscription</a> </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
-
     <script>
         const hamburger = document.querySelector(".hamburger");
         const navMenu = document.querySelector(".nav-menu");
@@ -465,7 +464,6 @@
                                 <a class="lucien-regular ttu" target="_blank" rel="noopener">
                                     Agents de voyage</a>
                             </li>
-
                             <li>
                                 <a class="lucien-regular ttu" target="_blank" rel="noopener">
                                     Informations légales</a>
@@ -474,8 +472,6 @@
                                 <a class="lucien-regular ttu" target="_blank" rel="noopener">
                                     Politique de confidentialité</a>
                             </li>
-
-
                         </ul>
 
                         <ul class="list-item list-item-hotel">
@@ -495,11 +491,15 @@
                     </div>
                 </div>
             </div>
-            <span>
-                <center>@ Copyright 2024 by MIRANTSOA</center>
+            <span class="footer_copy">
+                <center>
+                    &#169; Copyright by
+                    <a href="">Arlandon & Mirantsoa</a>
+                </center>
             </span>
         </div>
     </footer>
+
 
     {% block body %} {% endblock %}
 </body>
