@@ -456,7 +456,7 @@ input {
 }
 
 .wrapper {
-  background-image: url("../images/22.jpg");
+  background-image: url("../images/11.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -852,3 +852,6 @@ button {
   color: black;
   margin-top: 20px;
 }
+
+/*----------login ------------*/
+.box
